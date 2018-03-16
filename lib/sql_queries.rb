@@ -50,6 +50,6 @@ end
 
 def selects_the_category_name_and_the_sum_total_of_the_all_its_pledges_for_the_books_category
 # "Write your SQL query Here"
-# not sure how i came up with this. mostly just solved stuff in this lab, code just came out
+# not sure how i came up with this. mostly just solved stuff in this lab, code just came out. prolly worth redoing
 "select projects.category, sum(amount) from projects inner join pledges on projects.id = pledges.project_id group by projects.category having projects.category = 'books';"
 end
